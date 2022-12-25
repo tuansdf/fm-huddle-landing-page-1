@@ -1,6 +1,10 @@
 import Image from "next/image";
+import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 import Button from "/app/button";
+import { headFont } from "/app/fonts";
+import ImageSwitch from "/app/image-switch";
 import Section from "/app/section";
+import SectionText from "/app/section-text";
 
 import bgFooterTopMobile from "/public/bg-footer-top-mobile.svg";
 import bgSectionBottomMobile1 from "/public/bg-section-bottom-mobile-1.svg";
@@ -27,8 +31,12 @@ import imgSection1 from "/public/screen-mockups.svg";
 export default function Page() {
   return (
     <div className="">
-      <Section isCentered className="my-32">
-        <h1 className="mb-8 text-3xl font-bold lg:text-4xl">
+      <Section className="my-32 text-center">
+        <h1
+          className={
+            headFont.className + " mb-8 text-3xl font-bold lg:text-4xl"
+          }
+        >
           Build the community your fans will love
         </h1>
         <p className="mx-auto mb-12 max-w-prose">
@@ -36,7 +44,9 @@ export default function Page() {
           so does your audience. Create connections with your users as your
           engage in genuine discussion.
         </p>
-        <Button className="mb-24">Get started for free</Button>
+        <Button className="mb-24" pill>
+          Get started for free
+        </Button>
 
         <Image
           src={imgSection1}
@@ -45,10 +55,7 @@ export default function Page() {
         />
       </Section>
 
-      <Section
-        isCentered
-        className="w-max grid-cols-2 place-items-center gap-48 space-y-8 py-32 lg:grid lg:space-y-0"
-      >
+      <Section className="w-max grid-cols-2 place-items-center gap-48 space-y-8 py-32 text-center lg:grid lg:space-y-0">
         <div className="space-y-4">
           <Image src={iconCommunities} alt="" width={32} />
           <div className="text-6xl font-bold">1.4k+</div>
@@ -61,110 +68,87 @@ export default function Page() {
         </div>
       </Section>
 
-      <Image src={bgSectionTopMobile1} alt="" className="w-full sm:hidden" />
-      <Image
-        src={bgSectionTopDesktop1}
-        alt=""
-        className="hidden w-full sm:block"
+      <ImageSwitch
+        mobileSrc={bgSectionTopMobile1}
+        desktopSrc={bgSectionTopDesktop1}
       />
       <Section
-        isCentered
         theme="lightblue"
-        className="grid-cols-2 place-items-center gap-8 py-32 text-start lg:grid"
+        className="grid-cols-2 place-items-center gap-16 py-32 text-center lg:grid lg:text-start"
       >
         <Image src={imgSection2} alt="" />
-        <div className="order-first">
-          <h1 className="mt-16 mb-4 text-xl font-bold lg:text-4xl">
-            Grow together
-          </h1>
-          <p>
-            Generate meaningful discussions with your audience and build a
+        <SectionText
+          title="Grow together"
+          subtitle="Generate meaningful discussions with your audience and build a
             strong, loyal community. Think of the insightful conversations you
-            miss out on with a feedback form.
-          </p>
-        </div>
+            miss out on with a feedback form."
+          className="order-first"
+        />
       </Section>
-      <Image src={bgSectionBottomMobile1} alt="" className="w-full sm:hidden" />
-      <Image
-        src={bgSectionBottomDesktop1}
-        alt=""
-        className="hidden w-full sm:block"
+      <ImageSwitch
+        mobileSrc={bgSectionBottomMobile1}
+        desktopSrc={bgSectionBottomDesktop1}
       />
 
-      <Section
-        isCentered
-        className="grid-cols-2 place-items-center gap-8 py-32 text-start lg:grid"
-      >
+      <Section className="grid-cols-2 place-items-center gap-16 py-32 text-center lg:grid lg:text-start">
         <Image src={imgSection3} alt="" />
-        <div>
-          <h1 className="mt-16 mb-4 text-xl font-bold lg:text-4xl">
-            Flowing conversionsations
-          </h1>
-          <p>
-            You wouldn&apos;t paginate a conversation in real life, so why do it
+        <SectionText
+          title="Flowing conversionsations"
+          subtitle="You wouldn't paginate a conversation in real life, so why do it
             online? Our threads have just-in-time loading for a more natural
-            flow.
-          </p>
-        </div>
+            flow."
+        />
       </Section>
 
-      <Image src={bgSectionTopMobile2} alt="" className="w-full sm:hidden" />
-      <Image
-        src={bgSectionTopDesktop2}
-        alt=""
-        className="hidden w-full sm:block"
+      <ImageSwitch
+        mobileSrc={bgSectionTopMobile2}
+        desktopSrc={bgSectionTopDesktop2}
       />
       <Section
-        isCentered
         theme="lightblue"
-        className="grid-cols-2 place-items-center gap-8 py-32 lg:grid lg:text-start"
+        className="grid-cols-2 place-items-center gap-16 py-32 text-center lg:grid lg:text-start"
       >
         <Image src={imgSection4} alt="" />
-        <div className="order-first">
-          <h1 className="mt-16 mb-4 text-xl font-bold lg:text-4xl">
-            Your Users
-          </h1>
-          <p>
-            It takes no time at all to integrate Huddle with your app&apos;s
+        <SectionText
+          title="Your Users"
+          subtitle="It takes no time at all to integrate Huddle with your app's
             Authentication solution. This means, once signed in to your app,
-            your users can start chatting immediately.
-          </p>
-        </div>
+            your users can start chatting immediately."
+          className="order-first"
+        />
       </Section>
-      <Image src={bgSectionBottomMobile2} alt="" className="w-full sm:hidden" />
-      <Image
-        src={bgSectionBottomDesktop2}
-        alt=""
-        className="hidden w-full sm:block"
+      <ImageSwitch
+        mobileSrc={bgSectionBottomMobile2}
+        desktopSrc={bgSectionBottomDesktop2}
       />
 
-      <Section isCentered className="space-y-8 py-40">
+      <Section className="space-y-8 py-40 text-center">
         <h1 className="text-3xl font-bold leading-10 lg:text-4xl">
           Ready to Build Your Community?
         </h1>
-        <Button>Get Started For Free</Button>
+        <Button pill>Get Started For Free</Button>
       </Section>
 
-      <Image src={bgFooterTopMobile} alt="" className="w-full sm:hidden" />
-      <Image
-        src={bgFooterTopDesktop}
-        alt=""
-        className="hidden w-full sm:block"
+      <ImageSwitch
+        mobileSrc={bgFooterTopMobile}
+        desktopSrc={bgFooterTopDesktop}
       />
       <Section
         theme="dark"
         className="grid-cols-2 gap-8 space-y-16 py-16 lg:grid lg:space-y-0"
       >
         <div className="order-last">
-          <h1 className="text-lg font-bold uppercase">Newsletter</h1>
+          <h1 className={headFont.className + " text-lg font-bold uppercase"}>
+            Newsletter
+          </h1>
           <p className="mt-4 max-w-sm text-sm font-medium leading-6 tracking-wide">
             To recieve tips on how to grow your community, sign up to our weekly
             newsletter. We&apos;ll never send yo spam or pass on your email
             address
           </p>
           <div className="gap-8 lg:mt-8 lg:flex lg:items-center">
-            <input type="text" className="mt-8 w-full rounded p-2" />
-            <div className="mt-4 flex justify-end">
+            <input type="text" className="mt-8 w-full rounded p-4 lg:mt-0" />
+            <div className="mt-4 flex justify-end lg:mt-0">
               <Button>Subcribe</Button>
             </div>
           </div>
@@ -186,14 +170,14 @@ export default function Page() {
             <Image src={iconEmail} alt="" />
             <div>example@company.com</div>
           </div>
+
+          <div className="mt-8 flex items-center gap-4">
+            <FaFacebook size={24} />
+            <FaInstagram size={24} />
+            <FaTwitter size={24} />
+          </div>
         </div>
       </Section>
-
-      <div>
-        {/* <Image src={iconFacebook} alt="" />
-        <Image src={iconInstagram} alt="" />
-        <Image src={iconTwitter} alt="" /> */}
-      </div>
     </div>
   );
 }
