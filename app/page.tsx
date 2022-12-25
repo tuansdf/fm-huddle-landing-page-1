@@ -53,6 +53,7 @@ export default function Page() {
           src={imgSection1}
           alt="mockups"
           className="mx-auto w-full lg:max-w-screen-md"
+          priority
         />
       </Section>
 
