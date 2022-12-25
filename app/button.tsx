@@ -17,15 +17,15 @@ export default function Button({
   return (
     <button
       className={clsx(
-        "font-bold",
+        "font-bold capitalize",
         {
           "rounded-full": pill,
           rounded: !pill,
-          "border border-pink bg-white text-pink hover:border-light-pink hover:text-light-pink":
+          "border border-pink bg-white text-pink shadow shadow-light-pink drop-shadow hover:border-light-pink hover:text-light-pink":
             outline,
           "bg-pink text-white drop-shadow-lg hover:bg-light-pink": !outline,
-          "py-2 px-8 text-sm": small,
-          "px-12 py-4 text-sm": !small,
+          "py-1.5 px-6 text-sm lg:py-2 lg:px-8": small,
+          "px-12 py-3 text-sm lg:py-4 lg:px-16": !small,
         },
         className
       )}

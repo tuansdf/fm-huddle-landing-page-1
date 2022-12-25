@@ -10,6 +10,9 @@ interface IProps {
 export default function Layout({ children }: IProps) {
   return (
     <html lang="en">
+      <head>
+        <title>Huddle Landing Page - Frontend Mentor - Tuan Nguyen</title>
+      </head>
       <body className={bodyFont.className}>
         <Header />
         {children}

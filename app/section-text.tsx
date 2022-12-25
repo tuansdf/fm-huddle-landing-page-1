@@ -12,7 +12,7 @@ export default function SectionText({ title, subtitle, className }: IProps) {
       <h1
         className={
           headFont.className +
-          " mt-16 mb-4 text-xl font-bold lg:mb-8 lg:text-4xl"
+          " mt-16 mb-4 text-xl font-bold capitalize lg:mb-8 lg:text-4xl"
         }
       >
         {title}

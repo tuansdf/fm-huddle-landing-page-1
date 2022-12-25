@@ -31,10 +31,11 @@ import imgSection1 from "/public/screen-mockups.svg";
 export default function Page() {
   return (
     <div className="">
-      <Section className="my-32 text-center">
+      <Section className="pt-20 pb-40 text-center">
         <h1
           className={
-            headFont.className + " mb-8 text-3xl font-bold lg:text-4xl"
+            headFont.className +
+            " mb-8 text-3xl font-bold capitalize leading-10 lg:text-4xl"
           }
         >
           Build the community your fans will love
@@ -55,16 +56,16 @@ export default function Page() {
         />
       </Section>
 
-      <Section className="w-max grid-cols-2 place-items-center gap-48 space-y-8 py-32 text-center lg:grid lg:space-y-0">
+      <Section className="w-max grid-cols-2 place-items-center gap-48 space-y-8 text-center lg:grid lg:space-y-0 lg:pb-40">
         <div className="space-y-4">
-          <Image src={iconCommunities} alt="" width={32} />
-          <div className="text-6xl font-bold">1.4k+</div>
-          <div className="text-gray-500">Communities Formed</div>
+          <Image src={iconCommunities} alt="" className="w-8 lg:w-10" />
+          <div className="text-6xl font-bold lg:text-7xl">1.4k+</div>
+          <div className="text-lg text-gray-500">Communities Formed</div>
         </div>
         <div className="space-y-4">
-          <Image src={iconMessages} alt="" width={32} />
-          <div className="text-6xl font-bold">2.7m+</div>
-          <div className="text-gray-500">Messages sent</div>
+          <Image src={iconMessages} alt="" className="w-8 lg:w-10" />
+          <div className="text-6xl font-bold lg:text-7xl">2.7m+</div>
+          <div className="text-lg text-gray-500">Messages Sent</div>
         </div>
       </Section>
 
@@ -74,7 +75,7 @@ export default function Page() {
       />
       <Section
         theme="lightblue"
-        className="grid-cols-2 place-items-center gap-16 py-32 text-center lg:grid lg:text-start"
+        className="grid-cols-2 place-items-center gap-16 py-20 text-center lg:grid lg:pb-10 lg:pt-20 lg:text-start"
       >
         <Image src={imgSection2} alt="" />
         <SectionText
@@ -90,10 +91,10 @@ export default function Page() {
         desktopSrc={bgSectionBottomDesktop1}
       />
 
-      <Section className="grid-cols-2 place-items-center gap-16 py-32 text-center lg:grid lg:text-start">
+      <Section className="lg: grid-cols-2 place-items-center gap-16 py-40 text-center lg:grid lg:pb-24 lg:pt-40 lg:text-start">
         <Image src={imgSection3} alt="" />
         <SectionText
-          title="Flowing conversionsations"
+          title="Flowing conversations"
           subtitle="You wouldn't paginate a conversation in real life, so why do it
             online? Our threads have just-in-time loading for a more natural
             flow."
@@ -106,11 +107,11 @@ export default function Page() {
       />
       <Section
         theme="lightblue"
-        className="grid-cols-2 place-items-center gap-16 py-32 text-center lg:grid lg:text-start"
+        className="grid-cols-2 place-items-center gap-16 pb-40 text-center lg:grid lg:pb-10 lg:text-start"
       >
         <Image src={imgSection4} alt="" />
         <SectionText
-          title="Your Users"
+          title="Your users"
           subtitle="It takes no time at all to integrate Huddle with your app's
             Authentication solution. This means, once signed in to your app,
             your users can start chatting immediately."
@@ -122,9 +123,9 @@ export default function Page() {
         desktopSrc={bgSectionBottomDesktop2}
       />
 
-      <Section className="space-y-8 py-40 text-center">
-        <h1 className="text-3xl font-bold leading-10 lg:text-4xl">
-          Ready to Build Your Community?
+      <Section className="space-y-8 pt-20 pb-80 text-center lg:space-y-16 lg:py-40">
+        <h1 className="text-3xl font-bold capitalize leading-10 lg:text-4xl">
+          Ready to build your community?
         </h1>
         <Button pill>Get Started For Free</Button>
       </Section>
@@ -135,7 +136,7 @@ export default function Page() {
       />
       <Section
         theme="dark"
-        className="grid-cols-2 gap-8 space-y-16 py-16 lg:grid lg:space-y-0"
+        className="grid-cols-2 gap-8 space-y-16 py-16 lg:grid lg:space-y-0 lg:py-20"
       >
         <div className="order-last">
           <h1 className={headFont.className + " text-lg font-bold uppercase"}>
@@ -147,7 +148,10 @@ export default function Page() {
             address
           </p>
           <div className="gap-8 lg:mt-8 lg:flex lg:items-center">
-            <input type="text" className="mt-8 w-full rounded p-4 lg:mt-0" />
+            <input
+              type="text"
+              className="mt-8 w-full rounded p-2.5 lg:mt-0 lg:p-3.5"
+            />
             <div className="mt-4 flex justify-end lg:mt-0">
               <Button>Subcribe</Button>
             </div>
