@@ -23,7 +23,11 @@ export default function Section({
         "text-center": isCentered,
       })}
     >
-      <div className={clsx("mx-auto max-w-xs", className)}>{children}</div>
+      <div
+        className={clsx("mx-auto max-w-xs p-8 lg:max-w-screen-xl", className)}
+      >
+        {children}
+      </div>
     </section>
   );
 }

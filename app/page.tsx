@@ -7,6 +7,13 @@ import bgSectionBottomMobile1 from "/public/bg-section-bottom-mobile-1.svg";
 import bgSectionBottomMobile2 from "/public/bg-section-bottom-mobile-2.svg";
 import bgSectionTopMobile1 from "/public/bg-section-top-mobile-1.svg";
 import bgSectionTopMobile2 from "/public/bg-section-top-mobile-2.svg";
+
+import bgFooterTopDesktop from "/public/bg-footer-top-desktop.svg";
+import bgSectionBottomDesktop1 from "/public/bg-section-bottom-desktop-1.svg";
+import bgSectionBottomDesktop2 from "/public/bg-section-bottom-desktop-2.svg";
+import bgSectionTopDesktop1 from "/public/bg-section-top-desktop-1.svg";
+import bgSectionTopDesktop2 from "/public/bg-section-top-desktop-2.svg";
+
 import iconCommunities from "/public/icon-communities.svg";
 import iconEmail from "/public/icon-email.svg";
 import iconMessages from "/public/icon-messages.svg";
@@ -21,20 +28,27 @@ export default function Page() {
   return (
     <div className="">
       <Section isCentered className="my-32">
-        <h1 className="mb-8 text-3xl font-bold">
+        <h1 className="mb-8 text-3xl font-bold lg:text-4xl">
           Build the community your fans will love
         </h1>
-        <p className="mb-12">
+        <p className="mx-auto mb-12 max-w-prose">
           Huddle re-imagines the way we build communities. You have a voice, but
           so does your audience. Create connections with your users as your
           engage in genuine discussion.
         </p>
         <Button className="mb-24">Get started for free</Button>
 
-        <Image src={imgSection1} alt="mockups" />
+        <Image
+          src={imgSection1}
+          alt="mockups"
+          className="mx-auto w-full lg:max-w-screen-md"
+        />
       </Section>
 
-      <Section isCentered className="w-max space-y-8 py-32">
+      <Section
+        isCentered
+        className="w-max grid-cols-2 place-items-center gap-48 space-y-8 py-32 lg:grid lg:space-y-0"
+      >
         <div className="space-y-4">
           <Image src={iconCommunities} alt="" width={32} />
           <div className="text-6xl font-bold">1.4k+</div>
@@ -47,79 +61,131 @@ export default function Page() {
         </div>
       </Section>
 
-      <Image src={bgSectionTopMobile1} alt="" className="w-full" />
-      <Section isCentered theme="lightblue" className="py-32">
+      <Image src={bgSectionTopMobile1} alt="" className="w-full sm:hidden" />
+      <Image
+        src={bgSectionTopDesktop1}
+        alt=""
+        className="hidden w-full sm:block"
+      />
+      <Section
+        isCentered
+        theme="lightblue"
+        className="grid-cols-2 place-items-center gap-8 py-32 text-start lg:grid"
+      >
         <Image src={imgSection2} alt="" />
-        <h1 className="mt-16 mb-4 text-xl font-bold">Grow together</h1>
-        <p>
-          Generate meaningful discussions with your audience and build a strong,
-          loyal community. Think of the insightful conversations you miss out on
-          with a feedback form.
-        </p>
+        <div className="order-first">
+          <h1 className="mt-16 mb-4 text-xl font-bold lg:text-4xl">
+            Grow together
+          </h1>
+          <p>
+            Generate meaningful discussions with your audience and build a
+            strong, loyal community. Think of the insightful conversations you
+            miss out on with a feedback form.
+          </p>
+        </div>
       </Section>
-      <Image src={bgSectionBottomMobile1} alt="" className="w-full" />
+      <Image src={bgSectionBottomMobile1} alt="" className="w-full sm:hidden" />
+      <Image
+        src={bgSectionBottomDesktop1}
+        alt=""
+        className="hidden w-full sm:block"
+      />
 
-      <Section isCentered className="py-32">
+      <Section
+        isCentered
+        className="grid-cols-2 place-items-center gap-8 py-32 text-start lg:grid"
+      >
         <Image src={imgSection3} alt="" />
-        <h1 className="mt-16 mb-4 text-xl font-bold">
-          Flowing conversionsations
-        </h1>
-        <p>
-          You wouldn&apos;t paginate a conversation in real life, so why do it
-          online? Our threads have just-in-time loading for a more natural flow.
-        </p>
+        <div>
+          <h1 className="mt-16 mb-4 text-xl font-bold lg:text-4xl">
+            Flowing conversionsations
+          </h1>
+          <p>
+            You wouldn&apos;t paginate a conversation in real life, so why do it
+            online? Our threads have just-in-time loading for a more natural
+            flow.
+          </p>
+        </div>
       </Section>
 
-      <Image src={bgSectionTopMobile2} alt="" className="w-full" />
-      <Section isCentered theme="lightblue" className="py-32">
+      <Image src={bgSectionTopMobile2} alt="" className="w-full sm:hidden" />
+      <Image
+        src={bgSectionTopDesktop2}
+        alt=""
+        className="hidden w-full sm:block"
+      />
+      <Section
+        isCentered
+        theme="lightblue"
+        className="grid-cols-2 place-items-center gap-8 py-32 lg:grid lg:text-start"
+      >
         <Image src={imgSection4} alt="" />
-        <h1 className="mt-16 mb-4 text-xl font-bold">Your Users</h1>
-        <p>
-          It takes no time at all to integrate Huddle with your app&apos;s
-          Authentication solution. This means, once signed in to your app, your
-          users can start chatting immediately.
-        </p>
+        <div className="order-first">
+          <h1 className="mt-16 mb-4 text-xl font-bold lg:text-4xl">
+            Your Users
+          </h1>
+          <p>
+            It takes no time at all to integrate Huddle with your app&apos;s
+            Authentication solution. This means, once signed in to your app,
+            your users can start chatting immediately.
+          </p>
+        </div>
       </Section>
-      <Image src={bgSectionBottomMobile2} alt="" className="w-full" />
+      <Image src={bgSectionBottomMobile2} alt="" className="w-full sm:hidden" />
+      <Image
+        src={bgSectionBottomDesktop2}
+        alt=""
+        className="hidden w-full sm:block"
+      />
 
-      <Section isCentered className="my-40 space-y-8">
-        <h1 className="text-3xl font-bold leading-10">
+      <Section isCentered className="space-y-8 py-40">
+        <h1 className="text-3xl font-bold leading-10 lg:text-4xl">
           Ready to Build Your Community?
         </h1>
         <Button>Get Started For Free</Button>
       </Section>
 
-      <Image src={bgFooterTopMobile} alt="" className="w-full" />
-      <Section theme="dark" className="space-y-6 py-16">
-        <h1 className="text-lg font-bold uppercase">Newsletter</h1>
-        <p className="text-sm font-medium leading-6 tracking-wide">
-          To recieve tips on how to grow your community, sign up to our weekly
-          newsletter. We&apos;ll never send yo spam or pass on your email
-          address
-        </p>
-        <input type="text" className="w-full rounded p-2" />
-        <div className="flex justify-end">
-          <Button>Subcribe</Button>
-        </div>
-      </Section>
-
-      <Section theme="dark" className="space-y-4 pb-8">
-        <Image src={logo} alt="" />
-        <p className="text-sm font-medium leading-6 tracking-wide">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla
-          quam, hendrerit lacinia vestibulum a, ultrices quis sem.
-        </p>
-      </Section>
-
-      <Section theme="dark" className=" space-y-4 pb-8">
-        <div className="flex items-center gap-4">
-          <Image src={iconPhone} alt="" />
-          <div>Phone: +1-543-123-4567</div>
+      <Image src={bgFooterTopMobile} alt="" className="w-full sm:hidden" />
+      <Image
+        src={bgFooterTopDesktop}
+        alt=""
+        className="hidden w-full sm:block"
+      />
+      <Section
+        theme="dark"
+        className="grid-cols-2 gap-8 space-y-16 py-16 lg:grid lg:space-y-0"
+      >
+        <div className="order-last">
+          <h1 className="text-lg font-bold uppercase">Newsletter</h1>
+          <p className="mt-4 max-w-sm text-sm font-medium leading-6 tracking-wide">
+            To recieve tips on how to grow your community, sign up to our weekly
+            newsletter. We&apos;ll never send yo spam or pass on your email
+            address
+          </p>
+          <div className="gap-8 lg:mt-8 lg:flex lg:items-center">
+            <input type="text" className="mt-8 w-full rounded p-2" />
+            <div className="mt-4 flex justify-end">
+              <Button>Subcribe</Button>
+            </div>
+          </div>
         </div>
 
-        <div className="flex items-center gap-4">
-          <Image src={iconEmail} alt="" />
-          <div>example@company.com</div>
+        <div>
+          <Image src={logo} alt="" />
+          <p className="my-6 max-w-xs text-sm font-medium leading-6 tracking-wide">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+            nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.
+          </p>
+
+          <div className="mb-4 flex items-center gap-4">
+            <Image src={iconPhone} alt="" />
+            <div>Phone: +1-543-123-4567</div>
+          </div>
+
+          <div className="flex items-center gap-4">
+            <Image src={iconEmail} alt="" />
+            <div>example@company.com</div>
+          </div>
         </div>
       </Section>
 
