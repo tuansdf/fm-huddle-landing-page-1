@@ -21,7 +21,10 @@ export default function Section({
       })}
     >
       <div
-        className={clsx("mx-auto max-w-sm p-8 lg:max-w-screen-xl", className)}
+        className={clsx(
+          "mx-auto max-w-sm p-8 desktop:max-w-screen-xl",
+          className
+        )}
       >
         {children}
       </div>

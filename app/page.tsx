@@ -35,7 +35,7 @@ export default function Page() {
         <h1
           className={
             headFont.className +
-            " mb-8 text-3xl font-bold capitalize leading-10 lg:text-4xl"
+            " mb-8 text-3xl font-bold capitalize leading-10 desktop:text-4xl"
           }
         >
           Build the community your fans will love
@@ -52,20 +52,20 @@ export default function Page() {
         <Image
           src={imgSection1}
           alt="mockups"
-          className="mx-auto w-full lg:max-w-screen-md"
+          className="mx-auto w-full desktop:max-w-screen-md"
           priority
         />
       </Section>
 
-      <Section className="w-max grid-cols-2 place-items-center gap-48 space-y-8 text-center lg:grid lg:space-y-0 lg:pb-40">
+      <Section className="w-max grid-cols-2 place-items-center gap-48 space-y-8 text-center desktop:grid desktop:space-y-0 desktop:pb-40">
         <div className="space-y-4">
-          <Image src={iconCommunities} alt="" className="w-8 lg:w-10" />
-          <div className="text-6xl font-bold lg:text-7xl">1.4k+</div>
+          <Image src={iconCommunities} alt="" className="w-8 desktop:w-10" />
+          <div className="text-6xl font-bold desktop:text-7xl">1.4k+</div>
           <div className="text-lg text-gray-500">Communities Formed</div>
         </div>
         <div className="space-y-4">
-          <Image src={iconMessages} alt="" className="w-8 lg:w-10" />
-          <div className="text-6xl font-bold lg:text-7xl">2.7m+</div>
+          <Image src={iconMessages} alt="" className="w-8 desktop:w-10" />
+          <div className="text-6xl font-bold desktop:text-7xl">2.7m+</div>
           <div className="text-lg text-gray-500">Messages Sent</div>
         </div>
       </Section>
@@ -76,7 +76,7 @@ export default function Page() {
       />
       <Section
         theme="lightblue"
-        className="grid-cols-2 place-items-center gap-16 py-20 text-center lg:grid lg:pb-10 lg:pt-20 lg:text-start"
+        className="grid-cols-2 place-items-center gap-16 py-20 text-center desktop:grid desktop:pb-10 desktop:pt-20 desktop:text-start"
       >
         <Image src={imgSection2} alt="" />
         <SectionText
@@ -92,7 +92,7 @@ export default function Page() {
         desktopSrc={bgSectionBottomDesktop1}
       />
 
-      <Section className="lg: grid-cols-2 place-items-center gap-16 py-40 text-center lg:grid lg:pb-24 lg:pt-40 lg:text-start">
+      <Section className="desktop: grid-cols-2 place-items-center gap-16 py-40 text-center desktop:grid desktop:pb-24 desktop:pt-40 desktop:text-start">
         <Image src={imgSection3} alt="" />
         <SectionText
           title="Flowing conversations"
@@ -108,7 +108,7 @@ export default function Page() {
       />
       <Section
         theme="lightblue"
-        className="grid-cols-2 place-items-center gap-16 pb-40 text-center lg:grid lg:pb-10 lg:text-start"
+        className="grid-cols-2 place-items-center gap-16 pb-40 text-center desktop:grid desktop:pb-10 desktop:text-start"
       >
         <Image src={imgSection4} alt="" />
         <SectionText
@@ -124,8 +124,8 @@ export default function Page() {
         desktopSrc={bgSectionBottomDesktop2}
       />
 
-      <Section className="space-y-8 pt-20 pb-80 text-center lg:space-y-16 lg:py-40">
-        <h1 className="text-3xl font-bold capitalize leading-10 lg:text-4xl">
+      <Section className="space-y-8 pt-20 pb-80 text-center desktop:space-y-16 desktop:py-40">
+        <h1 className="text-3xl font-bold capitalize leading-10 desktop:text-4xl">
           Ready to build your community?
         </h1>
         <Button pill>Get Started For Free</Button>
@@ -137,7 +137,7 @@ export default function Page() {
       />
       <Section
         theme="dark"
-        className="grid-cols-2 gap-8 space-y-16 py-16 lg:grid lg:space-y-0 lg:py-20"
+        className="grid-cols-2 gap-8 space-y-16 py-16 desktop:grid desktop:space-y-0 desktop:py-20"
       >
         <div className="order-last">
           <h1 className={headFont.className + " text-lg font-bold uppercase"}>
@@ -148,12 +148,12 @@ export default function Page() {
             newsletter. We&apos;ll never send yo spam or pass on your email
             address
           </p>
-          <div className="gap-8 lg:mt-8 lg:flex lg:items-center">
+          <div className="gap-8 desktop:mt-8 desktop:flex desktop:items-center">
             <input
               type="text"
-              className="mt-8 w-full rounded p-2.5 lg:mt-0 lg:p-3.5"
+              className="mt-8 w-full rounded p-2.5 desktop:mt-0 desktop:p-3.5"
             />
-            <div className="mt-4 flex justify-end lg:mt-0">
+            <div className="mt-4 flex justify-end desktop:mt-0">
               <Button>Subcribe</Button>
             </div>
           </div>

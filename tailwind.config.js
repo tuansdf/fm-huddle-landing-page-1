@@ -10,6 +10,10 @@ module.exports = {
         "dark-cyan": "hsl(192, 100%, 9%)",
         "pale-blue": "hsl(207, 100%, 98%)",
       },
+      screens: {
+        mobile: "375px",
+        desktop: "1440px",
+      },
     },
   },
   plugins: [],

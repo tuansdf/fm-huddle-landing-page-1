@@ -24,8 +24,8 @@ export default function Button({
           "border border-pink bg-white text-pink shadow shadow-light-pink drop-shadow hover:border-light-pink hover:text-light-pink":
             outline,
           "bg-pink text-white drop-shadow-lg hover:bg-light-pink": !outline,
-          "py-1.5 px-6 text-sm lg:py-2 lg:px-8": small,
-          "px-12 py-3 text-sm lg:py-4 lg:px-16": !small,
+          "py-1.5 px-6 text-sm desktop:py-2 desktop:px-8": small,
+          "px-12 py-3 text-sm desktop:py-4 desktop:px-16": !small,
         },
         className
       )}
